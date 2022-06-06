@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="survey.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Social Media Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to fill the form
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name<span class="clue">(or nickname)</span></label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your sexual orientation/sexual identity/sexuality?</p>
+          <select id="dropdown" name="orientation" class="form-control" required>
+            <option disabled selected value>Select orientation</option>
+            <option value="aromantic">Aromantic</option>
+            <option value="asexual">Asexual</option>
+            <option value="bisexual">Bisexual</option>
+            <option value="fluid">Fluid</option>
+            <option value="gay">Gay</option>
+            <option value="lesbian">Lesbian</option>
+            <option value="gay">Gay</option>
+            <option value="pansexual">Pansexual</option>
+            <option value="straight">Straight</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="18"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <label>
+            <input
+              name="current-role"
+              value="student"
+              type="radio"
+              class="input-radio"
+              checked
+            />student</label
+          >
+          <label>
+            <input
+              name="current-role"
+              value="Full-Time-Job"
+              type="radio"
+              class="input-radio"
+            />Full Time Job</label
+          >
+
+          <label
+            ><input
+              name="current-role"
+              value="Full-Time-Learner"
+              type="radio"
+              class="input-radio"
+            />Full Time Learner</label
+          >
+
+          <label
+            ><input
+              name="current-role"
+              value="Prefer-not-to-say"
+              type="radio"
+              class="input-radio"
+            />Prefer not to say</label
+          >
+          <label
+            ><input
+              name="current-role"
+              value="Other"
+              type="radio"
+              class="input-radio"
+            />Other</label
+          >
+        </div>
+        <div class="form-group">
+          <p>What is your favorite Social Media?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Twitter">Twitter</option>
+            <option value="WhatsApp">WhatsApp</option>
+            <option value="YouTube">YouTube</option>
+            <option value="Instagram">Instagram</option>
+            <option value="LinKedIn">LinKedIn</option>
+            <option value="Printerest">Printerest</option>
+            <option value="TikTok">TikTok</option>
+            <option value="Snapchat">Snapchat</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            Which Social Media would you like to see improved?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="improved"
+              value="Facebook"
+              type="checkbox"
+              class="input-checkbox"
+            />Facebook</label
+          >
+          <label>
+            <input
+              name="improved"
+              value="Twitter"
+              type="checkbox"
+              class="input-checkbox"
+            />Twitter</label
+          >
+          <label
+            ><input
+              name="improved"
+              value="WhatsApp"
+              type="checkbox"
+              class="input-checkbox"
+            />WhatsApp</label
+          >
+          <label
+            ><input
+              name="improved"
+              value="YouTube"
+              type="checkbox"
+              class="input-checkbox"
+            />YouTube</label
+          >
+          <label
+            ><input
+              name="improved"
+              value="Instagram"
+              type="checkbox"
+              class="input-checkbox"
+            />Instagram</label
+          >
+          <label
+            ><input
+              name="improved"
+              value="LinKedIn"
+              type="checkbox"
+              class="input-checkbox"
+            />LinKedIn</label
+          >
+          <label
+            ><input
+              name="improved"
+              value="Printerest"
+              type="checkbox"
+              class="input-checkbox"
+            />Printerest</label
+          >
+          <label
+            ><input
+              name="improved"
+              value="TikTok"
+              type="checkbox"
+              class="input-checkbox"
+            />TikTok</label
+          >
+          <label
+            ><input
+              name="improved"
+              value="Snapchat"
+              type="checkbox"
+              class="input-checkbox"
+            />Snapchat</label
+          >
+          <label
+            ><input
+              name="improved"
+              value="Other"
+              type="checkbox"
+              class="input-checkbox"
+            />Other</label
+          >
+
+        </div>
+
+        <div class="form-group">
+          <p>Please detail what you would like to improve or change in those Social Media(s)</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
